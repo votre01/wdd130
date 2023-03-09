@@ -17,8 +17,9 @@
 }
 
   body {
-    max-width: 960px;
+    max-width: 800px;
     margin: 0 auto;
+    text-align: center;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -52,20 +53,42 @@
 
   h1 {
     color: var(--secondary-color);
+    font-weight: 100;
+    font-size: 1.4em;
     position: absolute;
-    top: 364px;
+    top: 30%;
+    left: 40%;
+    right: 40%;
   }
 
   article {
     position: absolute;
-    background-color: var(--secondary-color);
+    color: var(--secondary-color);
+    background-color: rgba(0, 0, 0, .5);
+    border: 1px solid var(--secondary-color);
+    font-size: .8em;
+    max-width: 700px;
+    max-height: 124px;
+    text-align: left;
+    top: 360px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
 
   article img {
     float: right;
-    width: 300px;
-    height: auto;
-  }
+    width: 110px;
+    padding: 12px;
+    margin: 0 auto;
+}
+
+article p {
+    padding: 12px;
+    margin: 0 auto;
+}
+
+
 
 
 

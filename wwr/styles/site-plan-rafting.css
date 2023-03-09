@@ -28,7 +28,8 @@
 
   header {
     padding: 20px;
-    background-color: var(--secondary-color);    
+    background-color: var(--secondary-color);
+        
   }
 
   p {
