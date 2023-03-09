@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Source Serif 4&fdisplay=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+:root {
+    --primary-color: #134266;
+    --secondary-color: #e1ce76;
+    --accent1-color: #7cc8da;
+    --accent2-color: #004040;
+  
+    --heading-font: 'Poppins', sans-serif;
+    --paragraph-font: 'Source Serif 4', serif;
+  
+    --nav-background-color: #134266;
+    --nav-link-color: #e1ce76;
+    --nav-hover-link-color: #7cc8da;
+    --nav-hover-background-color: #134266;
+}
+
+  body {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+  }
+
+  p {
+    font-family: var(--paragraph-font);
+    padding: 25px;
+  }
+
+  /*
+  a:link {
+    text-decoration: none;
+  }
+  */
+
+  .sociallinks a:link {
+    text-decoration: none;
+  }
+
+  .hero {
+    position: relative;
+  }
+
+  /*
+  .hero img {
+  }
+  */
+
+  h1 {
+    color: var(--secondary-color);
+    position: absolute;
+    top: 364px;
+  }
+
+  article {
+    position: absolute;
+    background-color: var(--secondary-color);
+  }
+
+  article img {
+    float: right;
+    width: 300px;
+    height: auto;
+  }
+
+
+
+
