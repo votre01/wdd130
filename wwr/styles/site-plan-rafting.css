@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source Serif 4&fdisplay=swap');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn&fdisplay=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 :root {
@@ -8,7 +8,7 @@
     --accent2-color: #004040;
   
     --heading-font: 'Poppins', sans-serif;
-    --paragraph-font: 'Source Serif 4', serif;
+    --paragraph-font: 'Vollkorn', serif;
   
     --nav-background-color: #134266;
     --nav-link-color: #e1ce76;
