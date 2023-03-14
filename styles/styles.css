@@ -1,22 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+:root {  
+    --main-font: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--main-font);
 }
 
 nav {
     background-color: steelblue;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
     padding: 10px;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 h1 {
     color: steelblue;
+    padding: 12px;
+    margin: 4px 4px 16px 4px;
+    border-bottom: 1px solid steelblue ;
+}
+
+main {
+    grid-column: 2 / 3;
+    margin: 1rem;
+}
+
+main p {
+    padding: 16px;
 }
 
 main img {
@@ -26,21 +50,22 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
+    margin: 10px;
 }
 
 p {
     padding: 0;
+    line-height: 1.2em;
+    font-size: 0.9em;
 }
 
 aside {
     position: relative;
-    width: 20em;
-    /*margin: 1em;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1em;
-    background-color: #eee;
-    color: #333;*/
+    width: 16em;
     text-align: center;
+    position: relative;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 aside img {
@@ -50,15 +75,22 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 70px;
-    left: 100px;
-    /* color: white;*/
+    top: 30px;
+    left: 70px;
+    color: gray;
+}
+
+aside p {
+    max-width: 200px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 footer {
     margin: 1em;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     text-align: center;
+    padding: 1em;
 }
 
 /* Class Selectors */
@@ -70,3 +102,22 @@ footer {
     background-color: #eee;
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
+
+.box li {
+    margin-left: 1.2em;
+    font-size: 0.9em;
+}
+
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+
