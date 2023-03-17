@@ -32,43 +32,57 @@
     padding: 25px;
   }
 
-  /*
-  a:link {
-    text-decoration: none;
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 12px;
+    background-color: var(--secondary-color);
   }
-  */
 
-  .sociallinks a:link {
-    text-decoration: none;
+  header img {
+    max-width: 100px;
+    height: auto;
   }
+
+  header nav {
+    padding: 6px 12px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--accent2-color);    
+    font-weight: 700; 
+  }
+
+  header nav a {
+    color: var(--nav-link-color);
+    padding: 0 24px;
+    max-width: 6px;
+    text-decoration: none;
+    font-family: var(--heading-font); 
+  } 
 
   .hero {
     position: relative;
   }
 
-  /*
-  .hero img {
-  }
-  */
-
   h1 {
+    padding: 6px;
     color: var(--secondary-color);
-    font-weight: 100;
+    background-color: rgba(13, 42, 66, .5);
+    font-weight: 700;
     font-size: 1.4em;
     position: absolute;
-    top: 32%;
-    left: 40%;
-    right: 40%;
+    top: 0;
+    left: 0;
+    right: 0;
   }
 
   article {
     position: absolute;
     color: var(--secondary-color);
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(13, 42, 66, .5);
     border: 1px solid var(--secondary-color);
     font-size: .8em;
     max-width: 700px;
-    max-height: 124px;
     text-align: left;
     top: 40%;
     left: 0;
@@ -86,4 +100,68 @@
 article p {
     padding: 12px;
     margin: 0 auto;
+}
+
+.history {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 6px 24px 36px 24px;
+  margin: 0;
+}
+
+.history h2 {
+  margin: 12px;
+  color: var(--secondary-color);
+  grid-column: 1 / 4;
+}
+
+.history p {
+  color: var(--secondary-color);
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.history img{
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 6px;
+  border: 1px solid var(--secondary-color);
+}
+
+.adventure {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-evenly;
+  gap: 12px;
+}
+
+.adventure h2 {
+  margin-top: 36px;
+  grid-column: 1 / 6;
+}
+
+.adventure figure {
+  margin: 0;
+  font-family: var(--heading-font);
+  font-size: .8em;
+
+}
+
+.adventure img {
+  max-width: 150px;
+} 
+
+footer {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.sociallinks a:link {
+  text-decoration: none;  
 }
