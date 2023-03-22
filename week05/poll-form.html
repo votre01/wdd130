@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML Form - User Poll</title>
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Trevor | HTML Form - User Poll</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fullname">Full name <input type="text" id="fullname" name="fullname"></label><br>                   
+                <label for="useremail">Email <input type="email" id="useremail" name="useremail"></label>                
+            </fieldset>
+
+            <fieldset>
+                <legend>Questions</legend>
+                <label for="browser">What is your favorite browser?</label>
+                <select name="browser" id="browser">
+                    <option value="Google Chrome">Google Chrome</option>
+                    <option value="Mozilla Firefox">Mozilla Firefox</option>
+                    <option value="Microsoft Edge">Microsoft Edge</option>
+                </select><br>
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet"><br>
+                <label for="places">List the places you have lived:</label>
+                <textarea name="places" id="places" rows="4" placeholder="Bulawayo, Harare"></textarea><br>
+                <button type="submit">Submit Poll</button>
+            </fieldset>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy;2023 HTML Form - User Poll Activity</p>
+    </footer>
+</body>
+</html>
