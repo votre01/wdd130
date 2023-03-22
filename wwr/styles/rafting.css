@@ -168,9 +168,11 @@ article p {
   margin: 0;
 }
 
-.contact h2 {
+.contact h1, h2 {
+  position: relative;
   margin: 12px;
   color: var(--secondary-color);
+  background: none;
   grid-column: 1 / 3;
 }
 
