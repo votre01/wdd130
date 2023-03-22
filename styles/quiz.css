@@ -13,10 +13,11 @@ body {
 form {
     width: 500px;
     margin: 0 auto;
-    padding: 1em;
+    padding: 1.2em;
     border: 1px solid #ccc;
     border-radius: .3em;
     background: rgb(63, 68, 78);
+    box-sizing: border-box;
 }
 
 ul {
