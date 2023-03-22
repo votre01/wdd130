@@ -275,11 +275,6 @@ input[type="radio"], input[type="checkbox"] {
   
 }
 
-input:focus,
-textarea:focus {
-  border-color: rgb(219, 148, 67);
-}
-
 .button {
   font-family: var(--heading-font);
   font-size: 1.1em;
