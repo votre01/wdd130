@@ -126,7 +126,7 @@ article p {
 }
 
 .history p {
-  color: var(--secondary-color);
+  color: white;
   text-align: left;
   margin: 0;
   padding: 6px;
@@ -223,11 +223,35 @@ article p {
   color: var(--secondary-color);
 }
 
-footer {
-  display: flex;
+.cta {
+  background: var(--primary-color);
+  color: white;
+  padding: 24px;
+}
+
+.cta h3 {
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+.cta button {
+  width: 40%;
   padding: 12px;
+  background: var(--secondary-color);
+  font-family: var(--heading-font);
+  font-size: 1.1em;
+  color: black;
+  border: 1px solid white;
+  border-radius: .3em;
+}
+
+footer {
+  display: flex;  
   align-items: center;
   justify-content: flex-end;
+  border-top: 1px solid rgba(0, 0, 0, .2);
+  padding: 12px;
+  margin-top: 2em;
 }
 
 .sociallinks a:link {
@@ -259,6 +283,7 @@ footer {
   padding: 0;
   margin: 0; 
 }
+
 .contact-form h2 {
   color: var(--secondary-color);
 }
@@ -308,9 +333,7 @@ select {
 input[type="radio"], input[type="checkbox"] {
   width: 1.5em;
   height: 1.5em;
-  vertical-align: bottom;
-
-  
+  vertical-align: bottom;  
 }
 
 .button {
@@ -323,4 +346,37 @@ input[type="radio"], input[type="checkbox"] {
   border: 1px solid #ccc;
   border-radius: .3em;
   color: white;
+}
+
+table, th, td {
+  padding: 4px;
+  margin: 0;
+}
+
+table {
+  width: 800px;
+  margin: 24px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid var(--primary-color);
+  width: 150px;
+  text-align: left;
+  font-family: var(--heading-font);  
+  padding: 6px;
+  color: black;
+}
+
+th {
+  background: var(--secondary-color);
+  font-size: .9em;
+}
+
+td {
+  font-size: .7em;
+}
+
+.info {
+  font-weight: 700;
 }
